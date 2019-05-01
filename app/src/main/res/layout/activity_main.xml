@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2445e9"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/ID_zipcode"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="205dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/getWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ID_zipcode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-205dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="Get Weather"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/currentImage"
+        android:layout_width="134dp"
+        android:layout_height="117dp"
+        android:layout_above="@+id/ID_currentTemperature"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-199dp"
+        app:srcCompat="@drawable/marvel" />
+
+    <TextView
+        android:id="@+id/ID_quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/ID_currentTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="199dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ID_currentForecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="227dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="129dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ID_timeTriOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light" />
+
+        <TextView
+            android:id="@+id/ID_timeTriTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/ID_timeTriThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light" />
+
+        <TextView
+            android:id="@+id/ID_timeTriFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/ID_timeTriFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ID_imageTriOne"
+        android:layout_width="78dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/ID_imageTriTwo"
+        android:layout_width="76dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/ID_imageTriFour"
+        android:layout_marginEnd="-4dp"
+        android:layout_toStartOf="@+id/ID_zipcode"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/ID_imageTriThree"
+        android:layout_width="74dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/ID_imageTriFour"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/ID_imageTriFour"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/ID_imageTriFive"
+        android:layout_marginStart="-5dp"
+        android:layout_toEndOf="@+id/ID_zipcode"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/ID_imageTriFive"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/ID_imageTriOne"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ID_maxTempTriOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light" />
+
+        <TextView
+            android:id="@+id/ID_maxTempTriTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/ID_maxTempTriThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light" />
+
+        <TextView
+            android:id="@+id/ID_maxTempTriFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/ID_maxTempTriFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/ID_imageTriFour"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ID_minTempTriOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/ID_minTempTriTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light" />
+
+        <TextView
+            android:id="@+id/ID_minTempTriThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/ID_minTempTriFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light" />
+
+        <TextView
+            android:id="@+id/ID_minTempTriFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_red_dark"
+        android:keepScreenOn="false"
+        android:text="Marvel's Weather Application"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
